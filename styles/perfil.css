@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background: linear-gradient(90deg, rgba(1,24,38,1) 18%, rgba(13,57,71,1) 70%);
+    box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.81);
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .icons img{
+    border-radius: 5px;
+}
+
+header .icons img:hover{
+    border: 1px solid white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 120px;
+    background: linear-gradient(90deg, rgba(13,57,71,1) 25%, rgba(1,98,118,1) 99%);
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.68);
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+.nav-logo-container  img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a{
+    border-bottom: 1px solid white;
+    font-size: 1.4rem;
+}
+nav .profile-link a:hover{
+    border-bottom: 2px solid white;
+    color: #13f2f2;
+}
+
+.card-profile{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    border-bottom: 5px solid  #033159;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*background-color: #03586b;
+    background-image: url(/assets/svg/circuit-board.svg);
+    */
+    font-family: 'Noto Sans Mono', monospace;
+
+}
+
+.info-profile{
+    width: 100%;
+    height: 300px;
+}
+
+.info-profile h1{
+    font-size: 2rem;
+    font-weight: 1000;
+    text-align: center;
+    color:  #032340;
+}
+.info-profile p{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #0A89A6;
+}
+.card-profile .image-profile{
+    width: 15%;
+    height: 250px;
+    margin-top: 100px;
+    border: 5px solid #0A89A6;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.image-profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.cv-content{
+    width: 100%;
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-content .info-cv{
+    width: 80%;
+    height: 95%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-cv .contacto-info{
+    width: 30%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contacto-info .contacto{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.contacto h2{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #032340;
+}
+.contacto .item-contacto{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-contacto img{
+    width: 40px;
+    height: 40px;
+}
+.item-contacto p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 10px;
+    color: #0a89a6;
+}
+
+.contacto-info .skills{
+    width: 80%;
+    height: 25%;
+}
+
+.skills h3{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #033159;
+}
+.skills li{
+    font-size: 1.2rem;
+}
+.contacto-info .logros{
+    width: 80%;
+    height: 45%;
+}
+.logros h3{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #033159;
+}
+.logros h4{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #0a89a6;
+}
+
+.logros p{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.info-cv .profesional-info{
+    width: 65%;
+    height: 95%;
+    border: 2px solid #0a89a6;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profesional-info .profile-profesional{
+    width: 80%;
+    height: 15%;
+}
+.profile-profesional h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #032340;
+}
+.profile-profesional p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.profesional-info .work-history{
+    width: 80%;
+    height: 45%;
+}
+.work-history h3{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #033159;
+}
+.work-history p{
+    font-size: 1.2rem;
+
+}
+.work-history li{
+    font-size: 1.2rem;
+
+}
+
+.profesional-info .academy-history{
+    width: 80%;
+    height: 30%;
+}
+.academy-history h4{
+    font-size: 1.6rem;
+    text-align: center;
+    color:  #033159;
+}
+.academy-history p{
+    font-size: 1.2rem;
+}

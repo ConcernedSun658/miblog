@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background: linear-gradient(90deg, rgba(1,24,38,1) 18%, rgba(13,57,71,1) 70%);
+    box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.81);
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .icons img{
+    border-radius: 5px;
+}
+
+header .icons img:hover{
+    border: 1px solid white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 120px;
+    background: linear-gradient(90deg, rgba(13,57,71,1) 25%, rgba(1,98,118,1) 99%);
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.68);
+}
+
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+.nav-logo-container  img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a{
+    border-bottom: 1px solid white;
+    font-size: 1.4rem;
+}
+nav .profile-link a:hover{
+    border-bottom: 2px solid white;
+    color: #13f2f2;
+}
+
+.intro-portafolio{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-portafolio .img-intro{
+    width: 30%;
+    height: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 5px solid white;
+    background-image: url(/assets/img/portafolio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-portafolio .card-description{
+    width: 65%;
+    height: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background: radial-gradient(circle, rgba(13,57,71,1) 26%, rgba(1,24,38,1) 90%);
+}
+
+.card-description h2{
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+}
+.card-description p{
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.card-description .referencias-card{
+    height: 200px;
+}
+
+.referencias-card .referencias-links{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.referencias-links img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.referencias-links img:hover{
+    width: 65px;
+    height: 65px;
+    opacity: 0.85;
+}
+
+
+/*Diseños para la seccion de portafolio*/
+
+.portafolio-content{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    background-color:  whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.portafolio-content h2{
+    font-size: 3rem;
+    text-align: center;
+    color: #011826;
+}
+.portafolio-content .portafolio{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 3px solid #0A89A6;
+    padding-top: 50px;
+}
+.portafolio-content .portafolio .portafolio-item{
+    width:  20%;
+    height: 370px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.568);
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portafolio-item .image-item{
+    width: 95%;
+    height: 40%;
+    margin-top: 5px;
+}
+
+.image-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.portafolio-item .description-item{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.description-item h2{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+    color:  #0A89A6;
+}
+.description-item a{
+    width: 60%;
+    height: 15%;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+    border: none;
+    margin-bottom: 30px;
+    background-color: #0d3947;
+}
+
+.description-item a:hover{
+    color: #13F2F2;
+    border: 2px solid  #13F2F2;
+}
